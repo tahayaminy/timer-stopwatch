@@ -87,7 +87,7 @@ const SE = () => {
       } else {
         $("s01").innerText = ++arr[4];
       }
-    }, 1);
+    }, 1000);
   } else {
     clearInterval(stopwatchT);
     arr = [0, 0, 0, 0, 0];
