@@ -16,7 +16,6 @@ const hourglassStart = () => {
 
     hourglassT = setInterval(() => {
       h -= 1;
-      console.log(h);
       $("backwave").style.height = (h * 100) / H + "%";
       if (h == 0) {
         hourglassEnd();
@@ -39,9 +38,7 @@ const hourglassEnd = () => {
 var hourglass = document.getElementsByClassName("hourglass");
 var stopwatch = document.getElementsByClassName("stopwatch");
 const change = (srv) => {
-  console.log("run");
   if (srv == true) {
-    console.log("shrt");
     for (let ex of stopwatch) {
       ex.style.display = "none";
     }
@@ -49,7 +46,6 @@ const change = (srv) => {
       ex.style.display = "block";
     }
   } else if (srv == false) {
-    console.log("shrt2");
     for (let ex of stopwatch) {
       ex.style.display = "block";
     }
